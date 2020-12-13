@@ -50,7 +50,7 @@ header .nav-icons > li > a > svg {
     font-size: 24px;
 }
 
-/* 슬라이더 dots, 좌우 화살표 */
+/* 메인슬라이더 dots, 좌우 화살표 */
 .main-visual {
     position: relative;
 }
@@ -105,8 +105,7 @@ header .nav-icons > li > a > svg {
     opacity: 1;
     box-sizing: border-box;
 }
-
-/* 주우우석 asdasdasd */
+/* //슬라이더 dots, 좌우 화살표 */
 
 .main-visual .slide {
     height: 1024px;
