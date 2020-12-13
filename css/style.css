@@ -1,7 +1,12 @@
 @charset "utf-8";
 @import "./common.css";
+@import "./slick.css";
 header {
+    width: 100%;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 header .logo {
     font-size: 0;
@@ -22,6 +27,7 @@ header ul {
     float: left;
 }
 header li {
+    color: #fff;
     float: left;
 }
 header .gnb > li {
@@ -29,9 +35,9 @@ header .gnb > li {
     font-size: 14px;
     font-family: 'Montserrat-Light';
     font-weight: 300;
-    color: #fff;
 }
-header .gnb > li > a:hover {
+header .gnb > li > a:hover,
+header .gnb > li > a.active {
     color: var(--text-color);
 }
 header .nav-icons > li {
@@ -42,4 +48,104 @@ header .nav-icons > li:first-child {
 }
 header .nav-icons > li > a > svg {
     font-size: 24px;
+}
+
+/* 슬라이더 dots, 좌우 화살표 */
+.main-visual {
+    position: relative;
+}
+.main-visual .slick-arrow {
+    width: 40px;
+    height: 73px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.main-visual .slick-arrow:hover {
+    opacity: .5;
+}
+.main-visual .slick-prev {
+    background: url("../images/sprites.png") no-repeat 0 -150px;
+    left: 150px;
+}
+.main-visual .slick-next {
+    background: url("../images/sprites.png") no-repeat -40px -150px;
+    right: 150px;
+}
+.main-visual .slick-dots {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    font-size: 0;
+    text-align: center;
+}
+.main-visual .slick-dots > li {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    display: inline-block;
+    position: relative;
+}
+.main-visual .slick-dots > li > button {
+    width: 11px;
+    height: 11px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slick-dots > li.slick-active > button {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #d3c1ad;
+    background: none;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+/* 주우우석 asdasdasd */
+
+.main-visual .slide {
+    height: 1024px;
+    padding-top: 377px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.main-visual .photo1 {
+    background-image: url("../images/mainslide_01.jpg");
+}
+.main-visual .photo2 {
+    background-image: url("../images/mainslide_02.jpg");
+}
+.main-visual .photo3 {
+    background-image: url("../images/mainslide_03.jpg");
+}
+.main-visual .slide > .slogan {
+    text-align: center;
+    color: #fff;
+}
+.main-visual .slide > .slogan > h3 {
+    font-size: 36px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+}
+.main-visual .slide > .slogan > h2 {
+    margin: 14px 0 24px;
+    font-size: 52px;
+    font-family: 'Raleway-ExtraBold';
+    font-weight: 800;
+}
+.main-visual .slide > .slogan > p {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 49px;
+    font-size: 16px;
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+    line-height: 24px;
 }
