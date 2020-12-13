@@ -199,10 +199,36 @@ header .nav-icons > li > a > svg {
 .introduce {
     margin-top: 80px;
     padding-top: 80px;
-    background: #fbfaf8;
     text-align: center;
+    background: #fbfaf8;
 }
 .introduce > .sub-title {
     width: 770px;
     margin: 15px auto 35px;
+}
+
+.txt-banner {
+    height: 150px;
+    padding-top: 45px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+    box-sizing: border-box;
+}
+.txt-banner .txt {
+    float: left;
+}
+.txt-banner .txt > .title {
+    font-size: 28px;
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+    color: #fff;
+}
+.txt-banner .txt > .title > span {
+    color: var(--text-color);
+}
+.txt-banner .txt > .title > .sub-title {
+    font-size: 18px;
+    color: #615855;
+}
+.txt-banner .btn {
+    float: right;
 }
