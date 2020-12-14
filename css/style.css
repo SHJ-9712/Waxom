@@ -257,3 +257,16 @@ header .nav-icons > li > a > svg {
 .txt-banner .btn {
     float: right;
 }
+
+.partners {
+    padding: 140px 0;
+    background: url("../images/partners_bg.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.partners img {
+    margin-right: 104px;
+}
+.partners img:last-child {
+    margin-right: 0;
+}
