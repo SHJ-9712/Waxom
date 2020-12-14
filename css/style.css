@@ -1,14 +1,15 @@
 @charset "utf-8";
 @import "./common.css";
-@import "./slick.css";
+@import "./font.css";
 body {
     height: 5000px;
 }
 header {
-    width: 100%;
     padding: 40px 0;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 9999;
 }
 header .logo {
@@ -60,26 +61,31 @@ header .nav-icons > li > a > svg {
 .main-visual .slick-arrow {
     width: 40px;
     height: 73px;
+    background: url("../images/sprites.png") no-repeat;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
 }
-.main-visual .slick-arrow:hover {
-    opacity: .5;
-}
 .main-visual .slick-prev {
-    background: url("../images/sprites.png") no-repeat 0 -150px;
+    background-position: 0 -77px;
     left: 150px;
 }
+.main-visual .slick-prev:hover {
+    background-position: 0 -150px;
+}
 .main-visual .slick-next {
-    background: url("../images/sprites.png") no-repeat -40px -150px;
+    background-position: -40px -77px;
     right: 150px;
 }
+.main-visual .slick-next:hover {
+    background-position: -40px -150px;
+}
 .main-visual .slick-dots {
-    width: 100%;
     position: absolute;
     bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 0;
     text-align: center;
 }
@@ -105,16 +111,15 @@ header .nav-icons > li > a > svg {
     height: 15px;
     border: 2px solid #d3c1ad;
     background: none;
-    opacity: 1;
-    box-sizing: border-box;
 }
 /* //슬라이더 dots, 좌우 화살표 */
 
 .main-visual .slide {
-    height: 1024px;
+    width: 100%;
+    height: 100vh;
     padding-top: 377px;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center top;
     background-size: cover;
     box-sizing: border-box;
 }
@@ -131,16 +136,25 @@ header .nav-icons > li > a > svg {
     text-align: center;
     color: #fff;
 }
+.main-visual .slide > .slogan > * {
+    transform: translateY(20%);
+    opacity: 0;
+}
+.main-visual .slick-active > .slogan > * {
+    animation: slideUp 0.8s forwards ease-out;
+}
 .main-visual .slide > .slogan > h3 {
     font-size: 36px;
     font-family: 'Raleway-Medium';
     font-weight: 500;
+    animation-delay: 0.4s;
 }
 .main-visual .slide > .slogan > h2 {
     margin: 14px 0 24px;
     font-size: 52px;
     font-family: 'Raleway-ExtraBold';
     font-weight: 800;
+    animation-delay: 0.6s;
 }
 .main-visual .slide > .slogan > p {
     width: 600px;
@@ -150,6 +164,20 @@ header .nav-icons > li > a > svg {
     font-family: 'Montserrat-Light';
     font-weight: 300;
     line-height: 24px;
+    animation-delay: 0.8s;
+}
+.main-visual .slide > .slogan > .btn {
+    animation-delay: 1s;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .services {
