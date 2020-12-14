@@ -16,7 +16,7 @@ header .logo {
     font-size: 0;
     float: left;
 }
-header .logo a {
+header .logo > a {
     width: 182px;
     height: 56px;
     display: inline-block;
@@ -166,7 +166,7 @@ header .nav-icons > li > a > svg {
     line-height: 24px;
     animation-delay: 0.8s;
 }
-.main-visual .slide > .slogan > .btn {
+.main-visual .slide > .slogan > a {
     animation-delay: 1s;
 }
 @keyframes slideUp {
@@ -181,7 +181,7 @@ header .nav-icons > li > a > svg {
 }
 
 .services {
-    margin-top: 94px;
+    margin: 94px auto 80px;
 }
 .services > ul > li {
     width: 270px;
@@ -214,46 +214,43 @@ header .nav-icons > li > a > svg {
     font-size: 36px;
     color: #555;
 }
-.services > ul > li > a > .title {
+.services > ul > li > a > h2 {
     margin: 30px 0 15px;
     font-size: 22px;
 }
-.services > ul > li > a > .sub-title {
+.services > ul > li > a > p {
     margin-bottom: 29px;
     font-size: 14px;
     line-height: 24px;
 }
 
 .introduce {
-    margin-top: 80px;
     padding-top: 80px;
     text-align: center;
     background: #fbfaf8;
 }
-.introduce > .sub-title {
-    width: 770px;
+.introduce > p {
+    width: 44%;
     margin: 15px auto 35px;
 }
 
 .txt-banner {
-    height: 150px;
-    padding-top: 45px;
+    padding: 50px 0;
     background: linear-gradient(to right, #211b19, #4e3427);
-    box-sizing: border-box;
 }
 .txt-banner .txt {
     float: left;
 }
-.txt-banner .txt > .title {
+.txt-banner .txt > h4 {
     font-size: 28px;
     font-family: 'Raleway-Regular';
     font-weight: 400;
     color: #fff;
 }
-.txt-banner .txt > .title > span {
+.txt-banner .txt > h4 > span {
     color: var(--text-color);
 }
-.txt-banner .txt > .title > .sub-title {
+.txt-banner .txt > h4 p {
     font-size: 18px;
     color: #615855;
 }
