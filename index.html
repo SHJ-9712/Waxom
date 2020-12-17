@@ -128,11 +128,18 @@
     </section>
 
     <section class="video">
-        <span class="play-icon"><i class="far fa-play-circle"></i></span>
+        <button type="button" class="play-icon"><i class="far fa-play-circle"></i></button>
         <h4 class="title">Waxom Video Presentation</h4>
-        <p class="dese">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-        <span class="time">03:26</span>
+        <p class="desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+        <span class="time">02:50</span>
+        <div class="overlay">
+            <div class="modal">
+                <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/ehJg_OlcjpE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button type="button" class="close" title="닫기"><i class="fas fa-times-circle"></i></button>
+            </div>
+        </div>
     </section>
-</body>
 <script src="js/slider.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>

@@ -257,3 +257,60 @@ header .nav-icons > li > a > svg {
 .txt-banner .btn {
     float: right;
 }
+
+.video {
+    background: url("../images/video_bg.jpg") no-repeat center / cover;
+    padding: 210px 0;
+    text-align: center;
+}
+.video > .play-icon {
+    margin-bottom: 40px;
+    padding: 15px;
+    display: inline-block;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.video > .play-icon:hover {
+    background: rgba(255, 21, 7, .8);
+}
+.video > .play-icon > svg {
+    font-size: 70px;
+}
+.video .play-icon,
+.video > h4,
+.video > p {
+    color: #fff;
+}
+.video > p {
+    width: 570px;
+    margin: 17px auto 26px;
+}
+.video > .time {
+    font-size: 14px;
+    font-family: 'Montserrat-Bold';
+    font-weight: 700;
+    color: var(--text-color);
+}
+.video > .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 9999;
+}
+.video > .overlay > .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video > .overlay > .modal > .close {
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    top: -34px;
+}
