@@ -316,25 +316,26 @@ header .nav-icons > li > a > svg {
 }
 
 .mobile-devices {
-    margin-top: 80px;
+    background: #fbfaf8;
+    padding-top: 80px;
 }
-.mobile-devices > img {
+.mobile-devices img {
     float: left;
 }
-.mobile-devices > .txt {
+.mobile-devices .txt {
     width: 664px;
     margin-top: 112px;
     float: right;
 }
-.mobile-devices > .txt > p {
+.mobile-devices .txt > p {
     margin: 28px 0 35px;
 }
-.mobile-devices > .txt > .features > li {
+.mobile-devices .txt > .features > li {
     padding-left: 50px;
     line-height: 32px;
     position: relative;
 }
-.mobile-devices > .txt > .features > li:before {
+.mobile-devices .txt > .features > li:before {
     content: '';
     width: 21px;
     height: 21px;
