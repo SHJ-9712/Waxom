@@ -313,6 +313,38 @@ header .nav-icons > li > a > svg {
     color: #fff;
     position: absolute;
     top: -34px;
+}
+
+.mobile-devices {
+    margin-top: 80px;
+}
+.mobile-devices > img {
+    float: left;
+}
+.mobile-devices > .txt {
+    width: 664px;
+    margin-top: 112px;
+    float: right;
+}
+.mobile-devices > .txt > p {
+    margin: 28px 0 35px;
+}
+.mobile-devices > .txt > .features > li {
+    padding-left: 50px;
+    line-height: 32px;
+    position: relative;
+}
+.mobile-devices > .txt > .features > li:before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background: url("../images/sprites.png") no-repeat -402px -89px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
 .partners {
     padding: 140px 0;
     background: url("../images/partners_bg.jpg") no-repeat center;
