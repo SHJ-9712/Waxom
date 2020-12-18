@@ -354,6 +354,7 @@ header .nav-icons > li > a > svg {
 }
 .partners img {
     margin-right: 104px;
+    vertical-align: middle;
 }
 .partners img:last-child {
     margin-right: 0;
