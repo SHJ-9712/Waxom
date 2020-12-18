@@ -509,3 +509,38 @@ footer .col-3 > .dribbble > li {
 footer .col-3 > .dribbble > li:nth-child(2n) {
     margin: 0 0 10px 0;
 }
+footer .bottom {
+    background: #111;
+}
+footer .bottom .copy {
+    float: left;
+}
+footer .bottom .designed {
+    float: right;
+}
+footer .bottom ul > li {
+    font-size: 13px;
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+    line-height: 111px;
+    color: #555;
+    float: left;
+}
+footer .bottom ul > li:after {
+    content: '';
+    width: 2px;
+    height: 13px;
+    margin: 0 12px;
+    display: inline-block;
+    background: #1e1e1e;
+    vertical-align: middle;
+}
+footer .bottom ul > li:last-child:after {
+    display: none;
+}
+footer .bottom ul > li > span {
+    color: #959595;
+}
+footer .bottom .copy > ul > li > a:hover {
+    color: var(--text-color);
+}
