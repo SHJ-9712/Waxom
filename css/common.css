@@ -7,3 +7,4 @@
 .desc{font-size: 16px; font-family: 'Montserrat-Light'; font-weight: 300; line-height: 28px; color: #8c8c8c;}
 .btn{min-width: 170px; display: inline-block; font-size: 14px;text-align: center; font-family: 'Raleway-ExtraBold'; font-weight: 800; text-transform: uppercase; line-height: 50px; color: #fff; background: var(--btn-color); border: 1px solid var(--btn-color); border-radius: 4px; box-shadow: inset 0 -3px #736357; box-sizing: border-box; outline: none;}
 .btn:hover{background: #736357; transform: scale(0.95); -webkit-transform: scale(0.95); -moz-transform: scale(0.95); -ms-transform: scale(0.95); -o-transform: scale(0.95);}
+.gradient{background: linear-gradient(to right, #211b19, #4e3427);}
