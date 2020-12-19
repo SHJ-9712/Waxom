@@ -434,7 +434,7 @@ footer .col-3 {
 footer .col-3:last-child {
     margin-right: 0;
 }
-footer .col-3 > h2 {
+footer .col-3 > .f-logo > a {
     width: 181px;
     height: 56px;
     margin-bottom: 20px;
@@ -538,9 +538,9 @@ footer .bottom ul > li:after {
 footer .bottom ul > li:last-child:after {
     display: none;
 }
+footer .bottom ul > li > a:hover {
+    color: var(--text-color);
+}
 footer .bottom ul > li > span {
     color: #959595;
-}
-footer .bottom .copy > ul > li > a:hover {
-    color: var(--text-color);
 }
