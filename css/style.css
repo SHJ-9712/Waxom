@@ -406,7 +406,133 @@ header .nav-icons > li > a > svg {
     transform: translateX(-50%);
 }
 
+.recent-posts {
+    margin-top: 80px;
+    text-align: center;
+}
+.recent-posts > .desc {
+    width: 44%;
+    margin: 17px auto 35px;
+}
+.recent-posts .posts-list li > a {
+    width: 370px;
+    display: inline-block;
+    outline: none;
+}
+.recent-posts .posts-list li > a > .recent-img-inner {
+    position: relative;
+}
+.recent-posts .posts-list li > a > .recent-img-inner > .date {
+    width: 50px;
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+    color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+.recent-posts .posts-list li > a > .recent-img-inner > .date > .day {
+    display: block;
+    font-size: 24px;
+    line-height: 35px;
+    background: #363636;
+    transition: 0.4s;
+}
+.recent-posts .posts-list li > a > .recent-img-inner > .date > .month {
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+    background: #252525;
+    transition: 0.4s;
+}
+.recent-posts .posts-list li > a:hover > .recent-img-inner > .date > .day {
+    background: var(--text-color);
+}
+.recent-posts .posts-list li > a:hover > .recent-img-inner > .date > .month {
+    background: #a48d72;
+}
+.recent-posts .posts-list li > a > .recent-img-inner > .hover-content {
+    font-size: 48px;
+    color: #fff;
+    background: rgba(17, 17, 17, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 0.4s;
+    opacity: 0;
+}
+.recent-posts .posts-list li > a:hover > .recent-img-inner > .hover-content {
+    opacity: 1;
+}
+.recent-posts .posts-list li > a > .recent-img-inner > .hover-content svg {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.recent-posts .posts-list li > a > .txt {
+    padding: 30px;
+    text-align: left;
+    border: 1px solid #f8f8f8;
+    border-top: none;
+    transition: 0.4s;
+}
+.recent-posts .posts-list li > a > .txt > h4 {
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    color: #555;
+}
+.recent-posts .posts-list li > a > .txt > p {
+    margin-top: 16px;
+    font-size: 14px;
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+    line-height: 22px;
+    color: #8c8c8c;
+}
+.recent-posts .posts-list li > a > .txt > .more-btn {
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+    color: var(--text-color);
+}
+.recent-posts .posts-list li > a:hover > .txt {
+    background: #362f2d;
+    border-color: #362f2d;
+}
+.recent-posts .posts-list li > a:hover > .txt > h4 {
+    color: var(--text-color);
+}
+.recent-posts .posts-list li > a:hover > .txt > p {
+    color: #fff;
+}
+.recent-posts > .controls {
+    margin-top: 40px;
+}
+.recent-posts > .controls > .slick-arrow {
+    width: 22px;
+    height: 22px;
+    background: url("../images/sprites.png") no-repeat;
+}
+.recent-posts > .controls > .prev {
+    background-position: -194px -89px;
+}
+.recent-posts > .controls > .prev:hover {
+    background-position: -194px -111px;
+}
+.recent-posts > .controls > .next {
+    background-position: -224px -89px;
+}
+.recent-posts > .controls > .next:hover {
+    background-position: -224px -111px;
+}
+
 .partners {
+    margin-top: 80px;
     padding: 140px 0;
     background: url("../images/partners_bg.jpg") no-repeat center;
     background-size: cover;
@@ -454,16 +580,12 @@ footer .col-3 a {
     display: inline-block;
 }
 footer .col-3 .more-btn {
-    margin-top: 21px;
-    font-size: 14px;
     font-family: 'Montserrat-Regular';
     font-weight: 400;
     color: #d1d1d1;
 }
-footer .col-3 .more-btn > svg {
-    margin-left: 10px;
-    font-size: 18px;
-    vertical-align: middle;
+footer .col-3 .more-btn:hover {
+    text-decoration: underline;
 }
 footer .col-3 ul > li {
     margin-bottom: 16px;

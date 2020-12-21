@@ -9,6 +9,17 @@ $('.main-visual').slick({
     autoplaySpeed: 2500
 });
 
+// .recent-posts 슬라이더
+$('.posts-list').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next')
+});
+
 // .video 모달창
 const playBtn = document.querySelector(".play-icon"),
     overlay = document.querySelector(".overlay"),
