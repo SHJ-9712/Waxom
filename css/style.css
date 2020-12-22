@@ -268,7 +268,8 @@ header .nav-icons > li > a > svg {
     border: 1px solid #ebebeb;
     border-radius: 3px;
 }
-.latest-projects .categories > button:hover {
+.latest-projects .categories > button:hover,
+.latest-projects .categories > .active {
     color: #fff;
     background: var(--btn-color);
     border-color: var(--btn-color);
