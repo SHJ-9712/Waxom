@@ -254,9 +254,121 @@ header .nav-icons > li > a > svg {
     float: right;
 }
 
+.latest-projects {
+    margin-top: 80px;
+    text-align: center;
+}
+.latest-projects > .desc {
+    width: 44%;
+    margin: 17px auto 35px;
+}
+.latest-projects .categories > button {
+    padding: 10px 23px;
+    margin-right: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+.latest-projects .categories > button:hover {
+    color: #fff;
+    background: var(--btn-color);
+    border-color: var(--btn-color);
+}
+.latest-projects ul {
+    margin-top: 40px;
+}
+.latest-projects ul > li {
+    width: 370px;
+    margin: 0 30px 30px 0;
+    float: left;
+}
+.latest-projects ul > li:nth-child(3n) {
+    margin-right: 0;
+}
+.latest-projects ul > li .hover-img-inner {
+    position: relative;
+}
+.latest-projects ul > li img {
+    width: 100%;
+    height: 237px;
+    overflow: hidden;
+}
+.latest-projects ul > li .hover-link {
+    background: rgba(17, 17, 17, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+.latest-projects ul > li:hover .hover-link {
+    opacity: 1;
+}
+.latest-projects ul > li .hover-link > a {
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.latest-projects ul > li .hover-link > a:hover {
+    color: var(--text-color);
+}
+.latest-projects ul > li .hover-link > .link-icon {
+    margin-left: -24px;
+}
+.latest-projects ul > li .hover-link > .search-icon {
+    margin-left: 24px;
+}
+.latest-projects ul > li .txt {
+    padding: 30px;
+    text-align: left;
+    background: #fbfaf8;
+    position: relative;
+    transition: 0.4s;
+}
+.latest-projects ul > li .txt:before {
+    content: '';
+    border-width: 20px;
+    border-style: solid;
+    border-color:transparent transparent #fbfaf8 transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    transition: 0.4s;
+}
+.latest-projects ul > li:hover .txt {
+    background: #362f2d;
+}
+.latest-projects ul > li:hover .txt:before {
+    border-color: transparent transparent #362f2d transparent;
+}
+.latest-projects ul > li .txt > h4 {
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+    font-weight: 500;
+    color: var(--text-color);
+}
+.latest-projects ul > li .txt > p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+    color: #d1d1d1;
+}
+.latest-projects ul > li:hover .txt > h4 {
+    color: #fff;
+}
+.latest-projects ul > li:hover .txt > p {
+    color: var(--text-color);
+}
+
 .video {
-    background: url("../images/video_bg.jpg") no-repeat center / cover;
+    margin-top: 80px;
     padding: 210px 0;
+    background: url("../images/video_bg.jpg") no-repeat center / cover;
     text-align: center;
 }
 .video > .play-icon {
@@ -413,6 +525,10 @@ header .nav-icons > li > a > svg {
 .recent-posts > .desc {
     width: 44%;
     margin: 17px auto 35px;
+}
+.recent-posts .posts-list {
+    width: 1200px;
+    margin: 0 auto;
 }
 .recent-posts .posts-list li > a {
     width: 370px;
