@@ -6,7 +6,16 @@ $('.main-visual').slick({
     dots: true,
     arrows : true,
     autoplay: true,
-    autoplaySpeed: 2500
+    autoplaySpeed: 2500,
+
+    responsive: [
+        {  
+            breakpoint: 769,
+            settings: {
+                arrows : false
+            }
+        }
+    ]
 });
 
 // .latest-projects 카테고리
@@ -16,7 +25,7 @@ $('.categories > button').click(function(){
 });
 
 $('.all').click(function(){
-    $('.project-list > li').fadeIn(500);    
+    $('.project-list > li').fadeIn(500);
 });
 $('.webDesign').click(function(){
     $('.project-list > .wD').fadeIn(500);
@@ -59,4 +68,9 @@ $('.posts-list').slick({
     arrows: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next')
+});
+
+// 태블릿, 모바일용 toggle-menu
+$('.toggle-menu').click(function(){
+    $('.gnb').slideToggle();
 });
