@@ -1,3 +1,8 @@
+// 태블릿용 toggle-menu
+$('.toggle-menu').click(function(){
+    $('.gnb').slideToggle();
+});
+
 // 상단 메인 슬라이더
 $('.main-visual').slick({
     infinite : true,
@@ -10,7 +15,7 @@ $('.main-visual').slick({
 
     responsive: [
         {  
-            breakpoint: 769,
+            breakpoint: 1025,
             settings: {
                 arrows : false
             }
@@ -67,10 +72,16 @@ $('.posts-list').slick({
     dots: false,
     arrows: true,
     prevArrow: $('.prev'),
-    nextArrow: $('.next')
-});
-
-// 태블릿, 모바일용 toggle-menu
-$('.toggle-menu').click(function(){
-    $('.gnb').slideToggle();
+    nextArrow: $('.next'),
+    
+    responsive: [
+        {  
+            breakpoint: 1025,
+            settings: {
+                infinite: false,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
+    ]
 });
