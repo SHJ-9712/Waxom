@@ -814,8 +814,8 @@ footer .bottom ul > li > span {
     }
     header .gnb > li {
         margin-left: 0;
+        display: block;
         font-size: 21px;
-        float: none;
     }
     header .nav-icons > li:first-child {
         margin-left: 0;
