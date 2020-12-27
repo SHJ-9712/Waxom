@@ -15,7 +15,7 @@ $('.main-visual').slick({
 
     responsive: [
         {  
-            breakpoint: 1025,
+            breakpoint: 961,
             settings: {
                 arrows : false
             }
@@ -76,9 +76,9 @@ $('.posts-list').slick({
     
     responsive: [
         {  
-            breakpoint: 1025,
+            breakpoint: 961,
             settings: {
-                infinite: false,
+                infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
