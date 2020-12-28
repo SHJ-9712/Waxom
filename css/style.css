@@ -832,7 +832,7 @@ footer .bottom ul > li > span {
         margin: 80px auto;
     }
     .services > ul > li {
-        width: 50%;
+        width: 25%;
         margin-right: 0;
     }
 
@@ -856,6 +856,18 @@ footer .bottom ul > li > span {
         margin-top: 14px;
     }
 
+    .latest-projects > .desc {
+        width: 100%;
+    }
+    .latest-projects ul > li {
+        width: 50%;
+        margin: 0;
+        float: left;
+    }
+    .latest-projects .btn {
+        margin-top: 30px;
+    }
+
     .mobile-devices {
         padding: 80px 0;
     }
@@ -868,12 +880,29 @@ footer .bottom ul > li > span {
         margin-top: 0;
         float: none;
     }
+    
+    .counters > ul {
+        width: 100%;
+    }
+    .counters > ul > li {
+        margin-right: 0;
+        float: none;
+        display: inline-block;
+    }
 
     .recent-posts > .desc {
         width: 100%;
     }
     .recent-posts .posts-list {
         width: 100%;
+    }
+
+    .partners {
+        text-align: center;
+    }
+    .partners img {
+        margin-right: 0;
+        width: 20%;
     }
 
     footer .bottom .copy {
